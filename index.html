@@ -19,6 +19,7 @@
       <a href="#work">Work</a>
       <a href="#services">Services</a>
       <a href="#about">About</a>
+      <a href="#connect">Connect</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -27,7 +28,7 @@
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Fashion & Textile Designer · India</p>
-        <h1>Creative ideas shaped into <em>commercial design.</em></h1>
+        <h1>Design with a story.<br><em>Made for the real world.</em></h1>
         <p class="intro">Production-ready womenswear, menswear, kidswear, textile prints, embroidery, technical flats and tech packs for fashion and lifestyle brands.</p>
         <div class="actions">
           <a class="button" href="#work">View selected work</a>
@@ -35,6 +36,7 @@
         </div>
       </div>
       <div class="hero-panel" aria-label="Design capabilities">
+        <p class="panel-kicker">From imagination to production</p>
         <span>01</span><strong>Concept</strong>
         <span>02</span><strong>Design</strong>
         <span>03</span><strong>Development</strong>
@@ -125,6 +127,7 @@
           <div class="project-meta"><div><h3>THE HERMIT</h3><p>Conceptual Womenswear Capsule</p></div><span class="arrow" aria-hidden="true">↗</span></div>
         </a>
       </div>
+      <p class="project-note">Select a project to explore the complete portfolio without leaving the website.</p>
     </section>
 
     <section id="services" class="section services">
@@ -149,6 +152,18 @@
       </div>
     </section>
 
+    <section id="connect" class="section connect">
+      <div class="connect-intro">
+        <p class="eyebrow">Find me online</p>
+        <h2>More work, services<br>and conversations.</h2>
+      </div>
+      <div class="social-list">
+        <a href="https://www.behance.net/abirubhap" target="_blank" rel="noopener"><span>01</span><strong>Behance</strong><small>Complete creative profile</small><b>↗</b></a>
+        <a href="https://www.linkedin.com/in/abirubha-palanisamy-6485b91b5" target="_blank" rel="noopener"><span>02</span><strong>LinkedIn</strong><small>Experience and connections</small><b>↗</b></a>
+        <a href="https://www.fiverr.com/abirubhad" target="_blank" rel="noopener"><span>03</span><strong>Fiverr</strong><small>Book a design service</small><b>↗</b></a>
+      </div>
+    </section>
+
     <section id="contact" class="contact">
       <p class="eyebrow">Available for freelance projects</p>
       <h2>Have a collection or product idea?</h2>
@@ -157,10 +172,28 @@
     </section>
   </main>
 
+  <div class="project-viewer" id="projectViewer" role="dialog" aria-modal="true" aria-labelledby="viewerTitle" hidden>
+    <div class="viewer-bar">
+      <button class="viewer-close" type="button" aria-label="Close project">Close ✕</button>
+      <span class="viewer-progress" aria-live="polite"></span>
+    </div>
+    <div class="viewer-layout">
+      <aside class="viewer-intro">
+        <p class="eyebrow" id="viewerNumber"></p>
+        <h2 id="viewerTitle"></h2>
+        <p class="viewer-label" id="viewerLabel"></p>
+        <p id="viewerDescription"></p>
+        <a class="text-link" id="viewerBehance" target="_blank" rel="noopener">View on Behance ↗</a>
+      </aside>
+      <div class="viewer-gallery" id="viewerGallery"></div>
+    </div>
+  </div>
+
   <footer>
     <span>© <span id="year">2026</span> Abirubha P.</span>
     <a href="#top">Back to top ↑</a>
   </footer>
+  <script src="content/projects.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
